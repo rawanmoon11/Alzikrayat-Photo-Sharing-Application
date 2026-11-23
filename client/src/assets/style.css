@@ -1,0 +1,163 @@
+
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Navbar */
+#navbar {
+    position: relative;
+    z-index: 2;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+
+/* Default Navbar color */
+#navbar .nav-link,
+#navbar .navbar-brand {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Home Page Navbar */
+#navbar.home-navbar .nav-link,
+#navbar.home-navbar .navbar-brand {
+    color: white;
+}
+
+#navbar .nav-link:hover {
+    color: lightgray;
+}
+
+/* Forms */
+#log,
+#reg,
+#up {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    height: 30px;
+    position: relative;
+    background-image: url("http://localhost:3000/uploads/logo.png");
+    background-position: top left;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+    padding-bottom: 80px;
+    border-radius: 20px;
+    z-index: 2;
+    opacity: 0.78;
+}
+
+/* Home Page */
+#home {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#home-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.99;
+    z-index: 0;
+}
+
+#home-text {
+    position: relative;
+    font-size: 30px;
+    color: white;
+    z-index: 1;
+    font-style: italic;
+}
+
+/* Mobile screen */
+@media (max-width: 575.98px) {
+    .card-img {
+        height: 300px;
+    }
+
+    .card-img-top {
+        height: 450px;
+    }
+
+    .foot {
+        font-size: 13px;
+    }
+}
+
+/* Tablets (portrait) screen */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .card-img {
+        height: 400px;
+    }
+
+    .card-img-top {
+        height: 500px;
+    }
+
+    .foot {
+        font-size: 14px;
+    }
+}
+
+/* Tablets (Landscape) screen */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card-img {
+        height: 500px;
+    }
+
+    .card-img-top {
+        height: 680px;
+    }
+
+    .foot {
+        font-size: 15px;
+    }
+}
+
+/* Laptop/Desktop screen */
+@media (min-width: 992px) and (max-width: 1499.98px) {
+    .card-img {
+        height: 350px;
+    }
+
+    .card-img-top {
+        height: 400px;
+    }
+
+    #details {
+        height: 950px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1500.98px) {
+    .card-img {
+        height: 650px;
+    }
+
+    .card-img-top {
+        height: 800px;
+    }
+}
