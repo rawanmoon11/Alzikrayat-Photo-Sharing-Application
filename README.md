@@ -1,34 +1,73 @@
-Alzikrayat
+# Alzikrayat – Photo Sharing Application
 
-Project Description
+## Project Description
+Alzikrayat is a web-based photo-sharing application built using the MERN Stack. It allows users to share photos, add comments, and explore memories through a photo gallery.
 
-Alzikrayat is a web-based photo-sharing application built using the MERN Stack. Its main objective is to allow users to share photos, add comments, and explore memories through a photo gallery.
+Guests can browse photos, while registered users can upload photos and add comments. Only photo owners can delete their photos.
 
-Guests can view all photos in the gallery, while registered users can upload photos and add comments. Only the owner of a photo is authorized to delete it.
+## Technologies Used
+- MongoDB
+- Express.js
+- React.js
+- Node.js
+- Mongoose
+- Bootstrap
+- Axios
 
-Architecture
+## Project Structure
+- `client/`: React frontend.
+- `server/`: Express backend, including controllers, models, routes, and middleware.
 
-MVC Architecture (Model-View-Controller).
+## Installation and Setup
 
-Technologies Used
+Clone the repository:
 
-- MongoDB – Database
-- Express.js – Backend framework
-- React.js – Frontend library
-- Node.js – Runtime environment
-- Bootstrap – UI styling
-- Axios – API requests
+```bash
+git clone -b master https://github.com/rawanmoon11/Alzikrayat-Photo-Sharing-Application.git
+cd Alzikrayat-Photo-Sharing-Application
+```
 
-How to Run
+Install dependencies:
 
-1. Start the MongoDB connection.
-2. Navigate to the server directory and run:
-   "npm run dev"
-3. Navigate to the client directory and run:
-   "npm run dev"
-4. Open the frontend in your browser:
-   "http://localhost:5173"
+```bash
+npm install
+cd client
+npm install
+```
 
-Student Name
+## Environment Variables
 
+Create a `.env` file inside the `server/` directory:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+PORT=3000
+```
+
+Replace the example value with your MongoDB connection string. Do not upload the `.env` file to GitHub.
+
+## How to Run
+
+**1. Start the Backend**
+
+From the project root:
+
+```bash
+node server/server.js
+```
+
+**2. Start the Frontend**
+
+In a separate terminal:
+
+```bash
+cd client
+npm run dev
+```
+
+Open the application at:
+
+http://localhost:5173
+
+## Author
 Rawan Mamoon
