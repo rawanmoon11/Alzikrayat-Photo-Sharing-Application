@@ -62,7 +62,8 @@ In a separate terminal:
 
 ```bash
 cd client
-npm.cmd run dev``
+npm.cmd run dev
+``
 
 Open the application at:
 
